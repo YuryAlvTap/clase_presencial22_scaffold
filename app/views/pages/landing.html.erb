@@ -1,0 +1,17 @@
+ <table class="table" style="color: white">
+    <thead>
+      <tr>
+      <th> Name </th>
+      <th> email </th>      
+      <th colspan="2"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @students.each do |student| %>
+        <tr>
+          <td><%= student.name %></td>
+          <td><%= student.email %></td>          
+        </tr>
+      <% end %>
+    </tbody>
+ </table>
